@@ -66,6 +66,13 @@ Map:
 1 item(s)
 ```
 
+To use hashmap in your own module-
+1. Copy the header file [hashmap.h](hashmap.h) and static library [libhmap.a](libhmap.a) in your module directory
+2. Include the header in the module as `#include "hashmap.h"`
+3. Compile the module with arguments `-L . -lhmap` (as shown above)
+
+Hashmap shall work fine with your module.
+
 #### Recompiling
 Should you wish to make any changes in the source files and recompile the library, you can do so as follows:
 ```
